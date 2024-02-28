@@ -1,4 +1,4 @@
-const { threeToTwenty, tenToTwoHundred } = require("../../solutions/balancing");
+const { threeToTwenty, tenToTwoHundred } = require("../balancing.js");
 const { bstToArray, isBalanced } = require("./validation_methods");
 
 describe("balanced BSTs", () => {
@@ -16,7 +16,7 @@ describe("balanced BSTs", () => {
     test("returns the root node of a valid BST", () => {
       expect(bstToArray(tenToTwoHundred())).toStrictEqual([10, 11, 30, 100, 200]);
     });
-      
+
     test("returns the root of a balanced BST", () => {
       expect(isBalanced(tenToTwoHundred())).toBe(true);
     });
